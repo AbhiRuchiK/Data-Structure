@@ -2,7 +2,7 @@
 #include<conio.h>
 #include<stdlib.h>
 #include<time.h>
-using namespace std;
+
 class ruchi
 {
 public:
@@ -35,7 +35,7 @@ void printnumber(ruchi* leadnode)
 
 if(leadnode == NULL)
 	return;
-cout<<leadnode->prime<<"\n";
+std::cout<<leadnode->prime<<"\n";
 printnumber(leadnode->next);
 }
 
@@ -127,51 +127,51 @@ tail = obj;
 
 printnumber(head);
 
-cout<<"Enter Position to delete:\n";
-cin>>position;
+std::cout<<"Enter Position to delete:\n";
+std::cin>>position;
 
 j = 0;
 DeletioninMiddle(head, position, j);
 
-cout<<"Remaining Prime Numbers after deletion:\n";
+std::cout<<"Remaining Prime Numbers after deletion:\n";
 printnumber(head);
 
-cout<<"Insert a number at the beginning:\nEnter Number:\n";
-cin>>primenumber;
+std::cout<<"Insert a number at the beginning:\nEnter Number:\n";
+std::cin>>primenumber;
 
 InsertatBeginning(primenumber, head);
 
-cout<<"List after Insertion:\n";
+std::cout<<"List after Insertion:\n";
 printnumber(head);
 
-cout<<"Enter number from above list after that node you want to insert a node:\n";
-cin>>position;
+std::cout<<"Enter number from above list after that node you want to insert a node:\n";
+std::cin>>position;
 
-cout<<"Enter Number you want to insert:\n";
-cin>>primenumber;
+std::cout<<"Enter Number you want to insert:\n";
+std::cin>>primenumber;
 
 InsertAfterGivenNode(primenumber,position, head);
 
-cout<<"List after Insertion:\n";
+std::cout<<"List after Insertion:\n";
 printnumber(head);
 
-cout<<"Insert a number at the end:\nEnter Number:\n";
-cin>>primenumber;
+std::cout<<"Insert a number at the end:\nEnter Number:\n";
+std::cin>>primenumber;
 
 InsertatEnding(primenumber, tail);
 
-cout<<"List after Insertion:\n";
+std::cout<<"List after Insertion:\n";
 printnumber(head);
 
-cout<<"Enter number from above list before that node you want to insert a node:\n";
-cin>>position;
+std::cout<<"Enter number from above list before that node you want to insert a node:\n";
+std::cin>>position;
 
-cout<<"Enter Number you want to insert:\n";
-cin>>primenumber;
+std::cout<<"Enter Number you want to insert:\n";
+std::cin>>primenumber;
 
 InsertBeforeGivenNode(primenumber,position, head);
 
-cout<<"List after Insertion:\n";
+std::cout<<"List after Insertion:\n";
 printnumber(head);
 
 
