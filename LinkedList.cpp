@@ -33,7 +33,7 @@ void PrintLinkedList(abhi* Node)
 {
 	if(Node==NULL)
 		return;
-	cout << Node->prime << "\t";
+	std::cout << Node->prime << "\t";
 	PrintLinkedList(Node->ptr);
 }
 
@@ -98,23 +98,23 @@ void main()
 			InsertPrimeNumber(arr[i]);
 	}
 	PrintLinkedList(lead);
-	cout<<"\n\nEnter Position of number\n\n";
-	cin>>position;
+	std::cout<<"\n\nEnter Position of number\n\n";
+	std::cin>>position;
 	DeletioninMiddle(lead, position, position_reached);
 	PrintLinkedList(lead);
-	cout<<"\n\nDeletion at first using LIFO stack:\n";
+	std::cout<<"\n\nDeletion at first using LIFO stack:\n";
 	DeletionLIFO();
-	cout<<"\nList after deletion LIFO:\n";
+	std::cout<<"\nList after deletion LIFO:\n";
 	PrintLinkedList(lead);
-	cout<<"\nList after deletion FIFO:\n";
+	std::cout<<"\nList after deletion FIFO:\n";
 	DeletionFIFO(lead);
 	PrintLinkedList(lead);
-	cout<<"\n\nEnter Position of number for Insert:\n";
-	cin>>position;
-	cout <<"\nEnter value do u want to insert:\n";
-	cin>>j;
+	std::cout<<"\n\nEnter Position of number for Insert:\n";
+	std::cin>>position;
+	std::cout <<"\nEnter value do u want to insert:\n";
+	std::cin>>j;
 	InsertioninMiddle(lead, position, position_reached,j);
-	cout<<"\nList After insertion:\n";
+	std::cout<<"\nList After insertion:\n";
 	PrintLinkedList(lead);
 	_getch();
 }
